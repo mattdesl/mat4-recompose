@@ -38,18 +38,7 @@ test("recomposes a 4x4 matrix", function(t) {
     recompose(m2, translation, scale, skew, perspective, quaternion)
     t.deepEqual(m2, m, 'recomposes perspective')
 
-    translation = [0, 0, 0]
-    scale = [1, 1, 1]
-    skew = [0, 0, 0]
-    perspective = [0,0,0,1]
-    quaternion = quatRotateX([], [0, 0, 0, 1], Math.PI/2)
-
-    mat4.identity(m)
-    mat4.rotateX(m, m, Math.PI/2)
-
-    t.deepEqual(mat4.fromQuat([], quaternion), m)
-    // recompose(m2, translation, scale, skew, perspective, quaternion)
-    // t.deepEqual(m2, m, 'recomposes rotation')
+    //could clean up tests here.
 
     t.end()
 })
