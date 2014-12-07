@@ -4,6 +4,7 @@
 
 Recompose a 4x4 matrix from translation, scale, skew, perspective, and rotation. This is commonly used in matrix animations (i.e. after [decompose](https://github.com/mattdesl/mat4-decompose) and interpolation). Code ported from [W3 CSS Spec](http://www.w3.org/TR/css3-transforms/#decomposing-a-3d-matrix). PRs for more tests/robustness/optimizations welcome. 
 
+
 ## Usage
 
 [![NPM](https://nodei.co/npm/mat4-recompose.png)](https://nodei.co/npm/mat4-recompose/)
@@ -19,6 +20,8 @@ Recomposes a matrix with the given vectors, storing the result into `matrix` (a 
 - `quaternion` [x, y, z, w]
 
 Returns the `matrix` being recomposed.
+
+Builds a translation matrix, then applies the quaternion rotation and perspective. The matrix is then multiplied by YZ shear, then XZ shear, then XY shear (if they are non-zero). Finally multiplied by scale to get the resulting recomposed matrix.
 
 ## License
 

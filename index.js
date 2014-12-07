@@ -32,8 +32,7 @@ module.exports = function recomposeMat4(matrix, translation, scale, skew, perspe
     matrix[7] = perspective[1]
     matrix[11] = perspective[2]
     matrix[15] = perspective[3]
-    mat4.multiply(matrix, matrix, rotationMatrix)
-    
+        
     // apply skew
     // temp is a identity 4x4 matrix initially
     mat4.identity(temp)
