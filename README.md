@@ -8,7 +8,7 @@ Recompose a 4x4 matrix from translation, scale, skew, perspective, and rotation.
 
 [![NPM](https://nodei.co/npm/mat4-recompose.png)](https://nodei.co/npm/mat4-recompose/)
 
-#### `recomposeMat4(matrix, translation, scale, skew, perspective, quaternion)`
+#### `recompose(matrix, translation, scale, skew, perspective, quaternion)`
 
 Recomposes a matrix with the given vectors, storing the result into `matrix` (a 16 float array). 
 
