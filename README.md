@@ -4,6 +4,7 @@
 
 Recompose a 4x4 matrix from translation, scale, skew, perspective, and rotation. This is commonly used in matrix animations (i.e. after [decompose](https://github.com/mattdesl/mat4-decompose) and interpolation). Code ported from [W3 CSS Spec](http://www.w3.org/TR/css3-transforms/#decomposing-a-3d-matrix). PRs for more tests/robustness/optimizations welcome. 
 
+You may also be interested in [mat4-interpolate](https://www.npmjs.com/package/mat4-interpolate), [mat4-decompose](https://www.npmjs.com/package/mat4-decompose), and [css-mat4](https://www.npmjs.com/package/css-mat4).
 
 ## Usage
 

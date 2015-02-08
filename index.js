@@ -48,7 +48,7 @@ module.exports = function recomposeMat4(matrix, translation, scale, skew, perspe
         mat4.multiply(matrix, matrix, temp)
     }
 
-    if (skew[0]) {
+    if (skew[0] !== 0) {
         temp[8] = 0
         temp[4] = skew[0]
         mat4.multiply(matrix, matrix, temp)
