@@ -1,6 +1,6 @@
 {
   "name": "mat4-recompose",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "recomposes a 4x4 matrix",
   "main": "index.js",
   "license": "MIT",
